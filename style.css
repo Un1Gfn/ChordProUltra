@@ -1,0 +1,46 @@
+
+@font-face {
+  font-family: mjt;
+  src: url(MuseJazzText.otf);
+}
+
+@font-face {
+  font-family: nscj;
+  src: url(NotoSansCJKjp-DemiLight.otf);
+}
+
+.chord {
+  font-family: mjt;
+}
+
+body {
+  font-family: nscj;
+  /* font-family: sans-serif; */
+  margin-left: 7%;
+}
+
+.chord:not(:last-child) {
+  padding-right: 0px;
+}
+
+.paragraph {
+  margin-bottom: 2em;
+  padding-left: 2%;
+}
+
+.chorus {
+  border-left-style: solid;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.chord:after {
+  content: '\200b';
+}
+
+.lyrics:after {
+  content: '\200b';
+}
